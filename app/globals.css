@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure the background is black and text is white */
+body {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Target prose elements to make text white */
+  .prose,
+  .prose p,
+  .prose strong,
+  .prose b,
+  .prose ul,
+  .prose ol,
+  .prose li,
+  .prose a {
+    color: white !important; /* Ensures all text in prose is white, including list items */
+  }
+  
+  /* Optional: Keep headings like h1 and h3 with different color */
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    color: #eeeeee !important; /* Lighter shade for headings */
+  }
+  
+  /* Ensure links are visible */
+  .prose a {
+    color: #9e9e9e !important; /* Light gray for links */
+  }
+  
+  /* Ensure unordered and ordered list text is white */
+  .prose ul, .prose ol {
+    color: white !important; /* List items in white */
+  }
+  
+  /* Specifically target list items to ensure text is white */
+  .prose li {
+    color: white !important;
+  }
+  
+  /* You can add more styles for other elements if needed */
+  
